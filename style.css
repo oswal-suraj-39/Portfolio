@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -35,6 +35,8 @@ body {
     height: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 1rem 1rem 0 0;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     box-shadow:
         inset 0 0 10px rgba(255, 255, 255, 0.2);
     padding: 1rem 1.5rem;
@@ -59,4 +61,34 @@ body {
     border-radius: 0.5rem;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+}
+
+.NameTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.shortProfile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    border-radius: 50%;
+    background: #1f42ad;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nt2 {
+    font-size: 0.6rem;
+    font-weight: bold;
 }
