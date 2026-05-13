@@ -1,13 +1,15 @@
 {
-    "personalInfo": {
-        "name": "Suraj Uttamchand Oswal",
-        "role": "Web Developer",
-        "address": "Pune",
-        "phone": "+91 9764407469",
-        "email": "surajoswal3@gmail.com",
-        "linkedin": "https://www.linkedin.com/in/suraj-oswal-25b458279/",
-        "github": "https://github.com/suraj-oswal-39"
-    },
+    "personalInfo": [
+        {
+            "name": "Suraj Uttamchand Oswal",
+            "role": "Web Developer",
+            "address": "Pune",
+            "phone": "+91 9764407469",
+            "email": "surajoswal3@gmail.com",
+            "linkedin": "https://www.linkedin.com/in/suraj-oswal-25b458279/",
+            "github": "https://github.com/suraj-oswal-39"
+        }
+    ],
     "education": [
         {
             "degree": "Bachelor of Business Administration",
@@ -43,10 +45,19 @@
     },
     "shortTagline": "I Build real-world web applications using frontend, backend, and database concepts.",
     "shortBio": "I am a BBA-CA student with a strong interest in web development and software engineering. I build dynamic web applications using HTML, CSS, JavaScript, and Node.js, along with database integration using MySQL. I have experience creating structured projects like DBMS Workbench system and inventory management system with interactive UI and backend logic. I focus on writing clean, scalable code and continuously improving my problem-solving skills. Currently, I am expanding my knowledge in Java and backend development to build complete real-world applications.",
-    "focusArea": [
-        "Frontend Development",
-        "Backend Basics",
-        "DBMS"
+    "focusDetails": [
+        {
+            "title": "Frontend Development",
+            "description": "I focus on building responsive and interactive user interfaces using HTML, CSS, and JavaScript. I enjoy working on UI design, animations, and improving user experience through clean and structured layouts."
+        },
+        {
+            "title": "Interactive Web Applications",
+            "description": "I develop dynamic web applications by connecting frontend interfaces with backend logic. I work with JavaScript and frameworks to create smooth, real-time user interactions and structured application flow."
+        },
+        {
+            "title": "Database Management Systems",
+            "description": "I have practical experience working with databases like MySQL, designing tables, and managing structured data. I build applications that integrate database operations with user interfaces for real-world use cases."
+        }
     ],
     "currentStatus": "Fresher - Open for Work"
 }

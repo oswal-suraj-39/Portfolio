@@ -10,10 +10,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    overflow-x: hidden;
 }
 
 .glassfilter {
@@ -26,8 +27,6 @@ body {
 }
 
 .container {
-    width: 95%;
-    height: 90%;
     color: white;
     text-align: center;
     border-radius: 1rem;
@@ -36,6 +35,7 @@ body {
     -webkit-backdrop-filter: blur(4px);
     box-shadow:
         inset 0 0 10px rgba(255, 255, 255, 0.2);
+    position: relative;
 }
 
 .navbar {
@@ -122,30 +122,24 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    box-shadow:
-        inset 0 0 10px rgba(255, 255, 255, 0.2);
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+    padding: 3rem 2rem 1rem 2rem;
 }
 
 .profileImg {
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
     width: 60%;
     height: auto;
     border-radius: 0 0 1rem 0;
-}
-
-.profileCardDetails {
-    position: absolute;
-    top: 2rem;
-    left: 1.5rem;
 }
 
 .pcd1 {
     text-align: left;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     width: max-content;
 }
 
@@ -191,7 +185,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.5rem;
     padding: 0.3rem;
-    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
     width: 1.5rem;
     height: 1.5rem;
     display: flex;
@@ -237,4 +231,21 @@ body {
 .tagLine {
     text-align: left;
     font-size: 1.9rem;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.shortInfo {
+    margin: 0 4rem 2rem 4rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
 }
