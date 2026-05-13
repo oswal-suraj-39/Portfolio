@@ -72,6 +72,7 @@ body {
     border-radius: 0.5rem;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .NameTitle {
@@ -89,7 +90,7 @@ body {
 
 .logo {
     border-radius: 50%;
-    background: #267ad9;
+    background: #216fc9;
     font-size: 1.5rem;
     padding: 0.3rem;
     width: 2rem;
@@ -109,13 +110,13 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 60%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .profileCard {
     position: relative;
     width: 30%;
-    margin: 2rem;
+    margin: 2rem 4rem;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
     border-radius: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -148,9 +149,19 @@ body {
     width: max-content;
 }
 
+.pcdp1 {
+    background: linear-gradient(to right, #216fc9, #3221c9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
 .pcdp2 {
     margin-top: 0.3rem;
     font-size: 0.8rem;
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
 .pcd2 {
@@ -165,6 +176,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
 }
 
 .pcd3 {
@@ -179,10 +191,50 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.5rem;
     padding: 0.3rem;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
     width: 1.5rem;
     height: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.pcd3 a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.introText {
+    width: 45%;
+    margin: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* border: 1px solid yellow; */
+}
+
+.Status {
+    width: max-content;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+.dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(0, 255, 0);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.tagLine {
+    text-align: left;
+    font-size: 1.9rem;
 }

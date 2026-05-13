@@ -1,9 +1,9 @@
 {
     "personalInfo": {
         "name": "Suraj Uttamchand Oswal",
-        "role": "Full Stack Developer",
-        "address": "pune",
-        "phone": 9764407469,
+        "role": "Web Developer",
+        "address": "Pune",
+        "phone": "+91 9764407469",
         "email": "surajoswal3@gmail.com",
         "linkedin": "https://www.linkedin.com/in/suraj-oswal-25b458279/",
         "github": "https://github.com/suraj-oswal-39"
@@ -26,11 +26,11 @@
             "AngularJS"
         ],
         "backend": [
-            "NodeJS",
+            "Node.JS",
             "Java",
             "Python",
             "MySQL",
-            "postgreSQL"
+            "PostgreSQL"
         ],
         "tools": [
             "VS Code",
@@ -41,7 +41,7 @@
             "draw.io"
         ]
     },
-    "shortTagline": "Building real-world web applications using frontend, backend, and database concepts.",
+    "shortTagline": "I Build real-world web applications using frontend, backend, and database concepts.",
     "shortBio": "I am a BBA-CA student with a strong interest in web development and software engineering. I build dynamic web applications using HTML, CSS, JavaScript, and Node.js, along with database integration using MySQL. I have experience creating structured projects like DBMS Workbench system and inventory management system with interactive UI and backend logic. I focus on writing clean, scalable code and continuously improving my problem-solving skills. Currently, I am expanding my knowledge in Java and backend development to build complete real-world applications.",
     "focusArea": [
         "Frontend Development",
