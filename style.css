@@ -284,3 +284,37 @@ body {
     font-size: 0.8rem;
     text-align: justify;
 }
+
+.skillSection {
+    margin-top: 2rem;
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 4rem 0 4rem;
+    gap: 4rem;
+}
+
+.skillsContainer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    list-style-type: none;
+    font-size: 0.8rem;
+}
+
+.skillsContainer li {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.5rem;
+}
+
+.skillsContainer div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+}
