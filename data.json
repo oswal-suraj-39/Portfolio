@@ -1,25 +1,22 @@
 {
-    "personalInfo": [
-        {
+    "personalInfo": {
             "name": "Suraj Uttamchand Oswal",
             "role": "Web Developer",
             "address": "Pune",
             "phone": "+91 9764407469",
             "email": "surajoswal3@gmail.com",
             "linkedin": "https://www.linkedin.com/in/suraj-oswal-25b458279/",
-            "github": "https://github.com/suraj-oswal-39"
-        }
-    ],
-    "education": [
-        {
+            "github": "https://github.com/suraj-oswal-39",
+            "profilePic": "./assets/images/profile.png"
+    },
+    "education": {
             "degree": "Bachelor of Business Administration",
             "course": "Computer Applications (BBA-CA)",
             "collegeName": "Your College Name",
             "university": "Your University Name",
             "year": "2021 - 2024",
             "status": "Completed"
-        }
-    ],
+    },
     "skills": {
         "frontend": [
             "HTML",
@@ -59,5 +56,15 @@
             "description": "I have practical experience working with databases like MySQL, designing tables, and managing structured data. I build applications that integrate database operations with user interfaces for real-world use cases."
         }
     ],
-    "currentStatus": "Fresher - Open for Work"
+    "currentStatus": "Fresher - Open for Work",
+    "svgLoc" : {
+        "location": "./assets/svgs/locationSign.svg",
+        "mail": "./assets/svgs/mailSign.svg",
+        "calendar": "./assets/svgs/calenderSign.svg",
+        "linkedin": "./assets/svgs/linkedinLogo.svg",
+        "github": "./assets/svgs/githubLogo.svg",
+        "codingBrowser": "./assets/svgs/codingBrowser.svg",
+        "dataFlow": "./assets/svgs/dataFlow.svg",
+        "dbms": "./assets/svgs/dbms.svg"
+    }
 }
