@@ -170,7 +170,7 @@ body {
 .pcd2 div {
     display: flex;
     align-items: center;
-    gap: 0.3rem;
+    gap: 0.5rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
 }
 
@@ -280,7 +280,7 @@ body {
     height: 2rem;
 }
 
-.fainfo {
+.fainfo1, .fainfo2, .fainfo3 {
     font-size: 0.8rem;
     text-align: justify;
 }

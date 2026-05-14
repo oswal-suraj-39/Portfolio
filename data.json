@@ -7,7 +7,9 @@
             "email": "surajoswal3@gmail.com",
             "linkedin": "https://www.linkedin.com/in/suraj-oswal-25b458279/",
             "github": "https://github.com/suraj-oswal-39",
-            "profilePic": "./assets/images/profile.png"
+            "profilePic": "./assets/images/profile.png",
+            "availability": "Open for Work",
+            "experience": "Fresher"
     },
     "education": {
             "degree": "Bachelor of Business Administration",
