@@ -1,47 +1,56 @@
 {
     "personalInfo": {
-            "name": "Suraj Uttamchand Oswal",
-            "role": "Web Developer",
-            "address": "Pune",
-            "phone": "+91 9764407469",
-            "email": "surajoswal3@gmail.com",
-            "linkedin": "https://www.linkedin.com/in/suraj-oswal-25b458279/",
-            "github": "https://github.com/suraj-oswal-39",
-            "profilePic": "./assets/images/profile.png",
-            "availability": "Open for Work",
-            "experience": "Fresher"
+        "name": "Suraj Uttamchand Oswal",
+        "role": "Web Developer",
+        "address": "Pune",
+        "phone": "+91 9764407469",
+        "email": "surajoswal3@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/suraj-oswal-25b458279/",
+        "github": "https://github.com/suraj-oswal-39",
+        "profilePic": "./assets/images/profile.png",
+        "availability": "Open for Work",
+        "experience": "Fresher"
     },
     "education": {
-            "degree": "Bachelor of Business Administration",
-            "course": "Computer Applications (BBA-CA)",
-            "collegeName": "Your College Name",
-            "university": "Your University Name",
-            "year": "2021 - 2024",
-            "status": "Completed"
+        "degree": "Bachelor of Business Administration",
+        "course": "Computer Applications (BBA-CA)",
+        "collegeName": "Your College Name",
+        "university": "Your University Name",
+        "year": "2021 - 2024",
+        "status": "Completed"
     },
-    "skills": {
-        "frontend": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "AngularJS"
-        ],
-        "backend": [
-            "Node.JS",
-            "Java",
-            "Python",
-            "MySQL",
-            "PostgreSQL"
-        ],
-        "tools": [
-            "VS Code",
-            "Android Studio",
-            "Eclipse IDE",
-            "MS Excel",
-            "MS Word",
-            "Draw.io"
-        ]
-    },
+    "skills": [
+        {
+            "title": "Frontend",
+            "skillArr": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "AngularJS"
+            ]
+        },
+        {
+            "title": "Backend",
+            "skillArr": [
+                "Node.JS",
+                "Java",
+                "Python",
+                "MySQL",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "title": "Tools",
+            "skillArr": [
+                "VS Code",
+                "Android Studio",
+                "Eclipse IDE",
+                "MS Excel",
+                "MS Word",
+                "Draw.io"
+            ]
+        }
+    ],
     "shortTagline": "I Build real-world web applications using frontend, backend, and database concepts.",
     "shortBio": "I am a BBA-CA student with a strong interest in web development and software engineering. I build dynamic web applications using HTML, CSS, JavaScript, and Node.js, along with database integration using MySQL. I have experience creating structured projects like DBMS Workbench system and inventory management system with interactive UI and backend logic. I focus on writing clean, scalable code and continuously improving my problem-solving skills. Currently, I am expanding my knowledge in Java and backend development to build complete real-world applications.",
     "focusDetails": [
@@ -59,7 +68,7 @@
         }
     ],
     "currentStatus": "Fresher - Open for Work",
-    "svgLoc" : {
+    "svgLoc": {
         "location": "./assets/svgs/locationSign.svg",
         "mail": "./assets/svgs/mailSign.svg",
         "calendar": "./assets/svgs/calenderSign.svg",

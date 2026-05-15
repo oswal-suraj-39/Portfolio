@@ -1,15 +1,33 @@
+function skillsDataLoader(data) {
+    const skillSection = document.querySelector(".skillSection");
+    const [skillsti1, skillsti2, skillsti3] = skillSection.getElementsByTagName("h3");
+    const [skillul1, skillul2, skillul3] = skillSection.getElementsByTagName("ul");
+    skillsti1.textContent = data.skills[0].title;
+    skillsti2.textContent = data.skills[1].title;
+    skillsti3.textContent = data.skills[2].title;
+    data.skills[0].skillArr.forEach(function (skill) {
+        const li = document.createElement("li");
+        li.textContent = skill;
+        skillul1.appendChild(li);
+    });
+    data.skills[1].skillArr.forEach(function (skill) {
+        const li = document.createElement("li");
+        li.textContent = skill;
+        skillul2.appendChild(li);
+    });
+    data.skills[2].skillArr.forEach(function (skill) {
+        const li = document.createElement("li");
+        li.textContent = skill;
+        skillul3.appendChild(li);
+    });
+}
+
 function aboutDataLoader(data) {
     const aboutSection = document.querySelector(".aboutSection");
-    const shortInfo = aboutSection.querySelector(".shortInfo");
-    const codingsvg = aboutSection.querySelector(".codingsvg");
-    const dataFlowsvg = aboutSection.querySelector(".dataFlowsvg");
-    const dbmssvg = aboutSection.querySelector(".dbmssvg");
-    const fati1 = aboutSection.querySelector(".fati1");
-    const fati2 = aboutSection.querySelector(".fati2");
-    const fati3 = aboutSection.querySelector(".fati3");
-    const fainfo1 = aboutSection.querySelector(".fainfo1");
-    const fainfo2 = aboutSection.querySelector(".fainfo2");
-    const fainfo3 = aboutSection.querySelector(".fainfo3");
+    const [shortInfo, codingsvg, dataFlowsvg, dbmssvg] = aboutSection.querySelectorAll(".shortInfo, img");
+    const [fati1, fati2, fati3] = aboutSection.querySelectorAll(".fati");
+    const [fainfo1, fainfo2, fainfo3] = aboutSection.querySelectorAll(".fainfo");
+    
     shortInfo.textContent = data.shortBio;
     codingsvg.src = data.svgLoc.codingBrowser;
     dataFlowsvg.src = data.svgLoc.dataFlow;
@@ -23,26 +41,15 @@ function aboutDataLoader(data) {
 }
 
 function homeDataLoader(data) {
-    const nameTitle = document.querySelector(".NameTitle");
-    const introText = document.querySelector(".introText");
-    const profileCard = document.querySelector(".profileCard");
-    const nt1 = nameTitle.querySelector(".nt1");
-    const nt2 = nameTitle.querySelector(".nt2");
-    const myStatus1 = introText.querySelector(".myStatus1");
-    const tagLine = introText.querySelector(".tagLine");
-    const pcdp1 = profileCard.querySelector(".pcdp1");
-    const pcdp2 = profileCard.querySelector(".pcdp2");
-    const pcd21 = profileCard.querySelector(".pcd21");
-    const pcd22 = profileCard.querySelector(".pcd22");
-    const pcd23 = profileCard.querySelector(".pcd23");
-    const profileImg = profileCard.querySelector(".profileImg");
-    const locsvg = profileCard.querySelector(".locsvg");
-    const mailsvg = profileCard.querySelector(".mailsvg");
-    const calesvg = profileCard.querySelector(".calesvg");
-    const linkedinLink = profileCard.querySelector(".linkedinLink");
-    const githubLink = profileCard.querySelector(".githubLink");
-    const linkedinLogo = profileCard.querySelector(".linkedinLogo");
-    const githubLogo = profileCard.querySelector(".githubLogo"); nt1.textContent = data.personalInfo.name;
+    const [nameTitle, introText, profileCard] = document.querySelectorAll(".NameTitle, .introText, .profileCard");
+    const [nt1, nt2] = nameTitle.querySelectorAll(".nt1, .nt2");
+    const [myStatus1, tagLine] = introText.querySelectorAll(".myStatus1, .tagLine");
+    const [pcdp1, pcdp2] = profileCard.querySelectorAll(".pcdp1, .pcdp2");
+    const [pcd21, pcd22, pcd23] = profileCard.querySelectorAll(".pcdpa");
+    const [profileImg, locsvg, mailsvg, calesvg, linkedinLink, githubLink] = profileCard.querySelectorAll(".profileImg, .locsvg, .mailsvg, .calesvg, .link");
+    const [linkedinLogo, githubLogo] = profileCard.querySelectorAll(".logo")
+
+    nt1.textContent = data.personalInfo.name;
     nt2.textContent = data.personalInfo.role;
     myStatus1.textContent = data.currentStatus;
     tagLine.innerHTML = `Hi, I'm Suraj!<br>
@@ -69,6 +76,7 @@ async function fetchData() {
         console.log(data);
         homeDataLoader(data);
         aboutDataLoader(data);
+        skillsDataLoader(data);
     } catch (error) {
         console.error("Error fetching data: ", error);
     }
