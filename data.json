@@ -76,7 +76,9 @@
         "github": "./assets/svgs/githubLogo.svg",
         "codingBrowser": "./assets/svgs/codingBrowser.svg",
         "dataFlow": "./assets/svgs/dataFlow.svg",
-        "dbms": "./assets/svgs/dbms.svg"
+        "dbms": "./assets/svgs/dbms.svg",
+        "folder": "./assets/svgs/folderCode.svg",
+        "live": "./assets/svgs/liveLink.svg"
     },
     "projects": [
         {

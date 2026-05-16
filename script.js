@@ -1,3 +1,37 @@
+function projectsDataLoader(data) {
+    const projectsSection = document.querySelector(".projectsSection");
+    const projectsContainer = projectsSection.querySelector(".projectsContainer");
+    data.projects.forEach(function (proj) {
+        let div = document.createElement("div");
+        div.classList = "projectCard";
+        div.innerHTML = `
+                    <img src="${proj.image}" class="pimg" />
+                    <h3>${proj.name}</h3>
+                    <p>${proj.info}</p>
+                    <ul class="tech"></ul>
+                    <div class="plink">
+                        <a href="${proj.srcCode}">
+                            <img src="${data.svgLoc.folder}" />
+                            Code
+                        </a>
+                        <a href="${proj.liveLink}">
+                            <img src="${data.svgLoc.live}" />
+                            Live Demo
+                        </a>
+                    </div>
+                </div>`;
+        projectsContainer.appendChild(div);
+    });
+    let ul = projectsContainer.querySelectorAll(".tech");
+    ul.forEach(function(u, index) {
+        data.projects[index].techUsed.forEach(function (te) {
+            const li = document.createElement("li");
+            li.textContent = te;
+            u.appendChild(li);
+        });
+    });
+}
+
 function skillsDataLoader(data) {
     const skillSection = document.querySelector(".skillSection");
     const [skillsti1, skillsti2, skillsti3] = skillSection.getElementsByTagName("h3");
@@ -27,7 +61,7 @@ function aboutDataLoader(data) {
     const [shortInfo, codingsvg, dataFlowsvg, dbmssvg] = aboutSection.querySelectorAll(".shortInfo, img");
     const [fati1, fati2, fati3] = aboutSection.querySelectorAll(".fati");
     const [fainfo1, fainfo2, fainfo3] = aboutSection.querySelectorAll(".fainfo");
-    
+
     shortInfo.textContent = data.shortBio;
     codingsvg.src = data.svgLoc.codingBrowser;
     dataFlowsvg.src = data.svgLoc.dataFlow;
@@ -77,6 +111,7 @@ async function fetchData() {
         homeDataLoader(data);
         aboutDataLoader(data);
         skillsDataLoader(data);
+        projectsDataLoader(data);
     } catch (error) {
         console.error("Error fetching data: ", error);
     }
