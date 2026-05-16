@@ -12,8 +12,7 @@
         "experience": "Fresher"
     },
     "education": {
-        "degree": "Bachelor of Business Administration",
-        "course": "Computer Applications (BBA-CA)",
+        "degree": "Bachelor of Business Administration in Computer Applications (BBA-CA)",
         "collegeName": "Your College Name",
         "university": "Your University Name",
         "year": "2021 - 2024",
@@ -78,7 +77,11 @@
         "dataFlow": "./assets/svgs/dataFlow.svg",
         "dbms": "./assets/svgs/dbms.svg",
         "folder": "./assets/svgs/folderCode.svg",
-        "live": "./assets/svgs/liveLink.svg"
+        "live": "./assets/svgs/liveLink.svg",
+        "degreeCollege": "./assets/svgs/degreeCollege.svg",
+        "collegeHat": "./assets/svgs/collegeHat.svg",
+        "universityBuilding": "./assets/svgs/universityBuilding.svg",
+        "checkedBox": "./assets/svgs/checkedBox.svg"
     },
     "projects": [
         {

@@ -1,3 +1,11 @@
+function educationDataLoader(data) {
+    const educationSection = document.querySelector(".educationSection");
+    const [eduCardImg1, eduCardImg2, eduCardImg3, eduCardImg4, eduCardImg5] = educationSection.querySelectorAll(".img");
+    const [eduCardh31, eduCardh32, eduCardh33, eduCardh34, eduCardh35] = educationSection.querySelectorAll("h3");
+    const [eduCardp1, eduCardp2, eduCardp3, eduCardp4, eduCardp5] = educationSection.querySelectorAll("p");
+
+}
+
 function projectsDataLoader(data) {
     const projectsSection = document.querySelector(".projectsSection");
     const projectsContainer = projectsSection.querySelector(".projectsContainer");
