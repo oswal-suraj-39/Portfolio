@@ -77,5 +77,63 @@
         "codingBrowser": "./assets/svgs/codingBrowser.svg",
         "dataFlow": "./assets/svgs/dataFlow.svg",
         "dbms": "./assets/svgs/dbms.svg"
-    }
+    },
+    "projects": [
+        {
+            "name": "DBMS Modern Workbench",
+            "info": "This project is a web-based Database Management System (DBMS) that allows users to create, manage, and interact with databases and tables through a graphical user interface.",
+            "techUsed": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "AngularJS",
+                "Node.js",
+                "Express.js",
+                "MySQL"
+            ],
+            "srcCode": "https://github.com/suraj-oswal-39/DBMS_modern_workbench",
+            "liveLink": "https://suraj-oswal-39.github.io/DBMS_modern_workbench/images/",
+            "image": "./assets/images/Screenshot1.png"
+        },
+        {
+            "name": "Inventory Management System",
+            "info": "A web-based Inventory Management System designed for small and medium-sized stores to manage stock, billing, suppliers, and sales efficiently.",
+            "techUsed": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "AngularJS",
+                "Node.js",
+                "Express.js",
+                "MySQL"
+            ],
+            "srcCode": "https://github.com/suraj-oswal-39/inventory_system",
+            "liveLink": "https://suraj-oswal-39.github.io/inventory_system/html/",
+            "image": "./assets/images/Screenshot2.png"
+        },
+        {
+            "name": "Spotify Clone",
+            "info": "A Spotify-inspired web music player built using HTML, CSS, and JavaScript, designed to simulate core music streaming functionalities like album browsing, song playback, and audio controls.",
+            "techUsed": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "srcCode": "https://github.com/suraj-oswal-39/Spotify-Clone-Project",
+            "liveLink": "https://suraj-oswal-39.github.io/Spotify-Clone-Project",
+            "image": "./assets/images/Screenshot3.png"
+        },
+        {
+            "name": "Simple Calculator",
+            "info": "A modern, minimal calculator web application built using HTML, CSS, and AngularJS. It supports basic arithmetic operations, percentage calculations, bracket handling, and a history panel.",
+            "techUsed": [
+                "HTML",
+                "CSS",
+                "AngularJS"
+            ],
+            "srcCode": "https://github.com/suraj-oswal-39/calculator_project",
+            "liveLink": "https://suraj-oswal-39.github.io/calculator_project/",
+            "image": "./assets/images/Screenshot4.png"
+        }
+    ]
 }

@@ -250,6 +250,7 @@ body {
     padding: 1rem;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.2);
 }
 
 .focusArea {
@@ -269,6 +270,7 @@ body {
     border-radius: 0.5rem;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.2);
 }
 
 .focusArea div img {
@@ -285,19 +287,19 @@ body {
     text-align: justify;
 }
 
-.skillSection {
-    margin-top: 2rem;
+.skillSection, .projectsSection {
+    margin-top: 1rem;
 }
 
 .skillsContainer {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 4rem 0 4rem;
+    margin: 2rem 4rem 0 4rem;
     gap: 4rem;
     height: min-content;
 }
 
-.skillsContainer ul {
+ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -306,7 +308,7 @@ body {
     font-size: 0.8rem;
 }
 
-.skillsContainer li {
+li {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.5rem;
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
@@ -323,4 +325,66 @@ body {
 .skillsContainer .line {
     width: 2px;
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+.projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 2rem 4rem;
+}
+
+.projectCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+    box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+}
+
+.projectCard .pimg {
+    width: 100%;
+    height: 40%;
+}
+
+.projectCard p {
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.projectCard ul {
+    margin: 0.5rem 0;
+}
+
+.plink {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.projectCard a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5rem;
+    color: white;
+    padding: 0.3rem 0.5rem;
+}
+
+.projectCard a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+}
+
+.projectCard a img {
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.3rem;
 }
