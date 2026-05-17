@@ -1,3 +1,19 @@
+function contactDataLoader(data) {
+    const contactSection = document.querySelector(".contactSection");
+    const [cciti1, cciti2, cciti3, cciti4] = contactSection.querySelectorAll(".cciti");
+    const [ccip1, ccip2, ccip3, ccip4] = contactSection.querySelectorAll(".ccip");
+    
+    cciti1.textContent = "Email";
+    cciti2.textContent = "Phone"
+    cciti3.textContent = "Linkedin";
+    cciti4.textContent = "Github";
+
+    ccip1.textContent = data.personalInfo.email;
+    ccip2.textContent = data.personalInfo.phone;
+    ccip3.textContent = data.personalInfo.linkedin;
+    ccip4.textContent = data.personalInfo.github;
+}
+
 function educationDataLoader(data) {
     const educationSection = document.querySelector(".educationSection");
     const [eduCardImg1, eduCardImg2, eduCardImg3, eduCardImg4, eduCardImg5] = educationSection.querySelectorAll("img");
@@ -139,6 +155,7 @@ async function fetchData() {
         skillsDataLoader(data);
         projectsDataLoader(data);
         educationDataLoader(data);
+        contactDataLoader(data);
     } catch (error) {
         console.error("Error fetching data: ", error);
     }
