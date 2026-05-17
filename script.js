@@ -1,8 +1,26 @@
 function educationDataLoader(data) {
     const educationSection = document.querySelector(".educationSection");
-    const [eduCardImg1, eduCardImg2, eduCardImg3, eduCardImg4, eduCardImg5] = educationSection.querySelectorAll(".img");
-    const [eduCardh31, eduCardh32, eduCardh33, eduCardh34, eduCardh35] = educationSection.querySelectorAll("h3");
-    const [eduCardp1, eduCardp2, eduCardp3, eduCardp4, eduCardp5] = educationSection.querySelectorAll("p");
+    const [eduCardImg1, eduCardImg2, eduCardImg3, eduCardImg4, eduCardImg5] = educationSection.querySelectorAll("img");
+    const [eduCardh31, eduCardh32, eduCardh33, eduCardh34, eduCardh35] = educationSection.querySelectorAll(".eciti");
+    const [eduCardp1, eduCardp2, eduCardp3, eduCardp4, eduCardp5] = educationSection.querySelectorAll(".ecip");
+
+    eduCardImg1.src = data.svgLoc.degreeCollege;
+    eduCardImg2.src = data.svgLoc.collegeHat;
+    eduCardImg3.src = data.svgLoc.universityBuilding;
+    eduCardImg4.src = data.svgLoc.calendar;
+    eduCardImg5.src = data.svgLoc.checkedBox;
+
+    eduCardh31.textContent = data.education[0].title;
+    eduCardh32.textContent = data.education[1].title;
+    eduCardh33.textContent = data.education[2].title;
+    eduCardh34.textContent = data.education[3].title;
+    eduCardh35.textContent = data.education[4].title;
+
+    eduCardp1.textContent = data.education[0].info;
+    eduCardp2.textContent = data.education[1].info;
+    eduCardp3.textContent = data.education[2].info;
+    eduCardp4.textContent = data.education[3].info;
+    eduCardp5.textContent = data.education[4].info;
 
 }
 
@@ -18,11 +36,11 @@ function projectsDataLoader(data) {
                     <p>${proj.info}</p>
                     <ul class="tech"></ul>
                     <div class="plink">
-                        <a href="${proj.srcCode}">
+                        <a href="${proj.srcCode}" title="Source Code">
                             <img src="${data.svgLoc.folder}" />
                             Code
                         </a>
-                        <a href="${proj.liveLink}">
+                        <a href="${proj.liveLink}" title="Go Live">
                             <img src="${data.svgLoc.live}" />
                             Live Demo
                         </a>
@@ -120,6 +138,7 @@ async function fetchData() {
         aboutDataLoader(data);
         skillsDataLoader(data);
         projectsDataLoader(data);
+        educationDataLoader(data);
     } catch (error) {
         console.error("Error fetching data: ", error);
     }

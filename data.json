@@ -11,13 +11,28 @@
         "availability": "Open for Work",
         "experience": "Fresher"
     },
-    "education": {
-        "degree": "Bachelor of Business Administration in Computer Applications (BBA-CA)",
-        "collegeName": "Your College Name",
-        "university": "Your University Name",
-        "year": "2021 - 2024",
-        "status": "Completed"
-    },
+    "education": [
+        {
+            "title": "Degree",
+            "info": "Bachelor of Business Administration in Computer Applications (BBA-CA)"
+        },
+        {
+            "title": "College Name",
+            "info": "Arihant College of Arts, Commerce & Science"
+        },
+        {
+            "title": "University Name",
+            "info": "Savitribai Phule Pune University"
+        },
+        {
+            "title": "Year",
+            "info": "2023 - 2026"
+        },
+        {
+            "title": "Status",
+            "info": "Completed"
+        }
+    ],
     "skills": [
         {
             "title": "Frontend",
