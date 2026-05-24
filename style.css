@@ -57,7 +57,6 @@ body {
     align-items: center;
     gap: 0.5rem 2rem;
     flex-wrap: wrap;
-    flex-grow: 1;
 }
 
 .tabs a {
@@ -459,7 +458,8 @@ li {
     text-align: left;
 }
 
-.contactContainer form input, textarea {
+.contactContainer form input,
+textarea {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.5rem;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
@@ -477,11 +477,11 @@ input::placeholder {
 }
 
 input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .contactContainer form textarea {
@@ -526,12 +526,18 @@ textarea::placeholder {
 
 
 @media screen and (max-width: 902px) {
+    .tabs {
+        flex-grow: 1;
+    }
+
     .profileCard {
         width: 20rem;
     }
+
     .profileImg {
         display: block;
-    }    
+    }
+
     .heroSection {
         justify-content: center;
     }
@@ -541,21 +547,27 @@ textarea::placeholder {
     .heroSection {
         margin: 2rem 2rem;
     }
+
     .shortInfo {
         margin: 0 2rem 2rem 2rem;
     }
+
     .focusArea {
         margin: 0 2rem;
     }
+
     .skillsContainer {
         margin: 2rem 2rem 0 2rem;
     }
+
     .projectsContainer {
         margin: 2rem 2rem;
     }
+
     .educationContainer {
         margin: 2rem 2rem;
     }
+
     .contactContainer {
         margin: 2rem 2rem;
     }
@@ -564,38 +576,50 @@ textarea::placeholder {
 @media screen and (max-width: 500px) {
     .profileImg {
         display: none;
-    } 
+    }
 }
 
 @media screen and (max-width: 425px) {
     body {
         padding: 1rem;
     }
+
     .heroSection {
         margin: 1rem 1rem 1.5rem 1rem;
     }
+
     .shortInfo {
         margin: 0 1rem 1rem 1rem;
     }
+
     .focusArea {
         margin: 0 1rem;
     }
+
     .skillsContainer {
         margin: 1rem 1rem 0 1rem;
     }
+
     .projectsContainer {
         margin: 1rem 1rem;
     }
+
     .educationContainer {
         margin: 1rem 1rem;
     }
+
     .contactContainer {
         margin: 1rem 1rem;
     }
+
     .aboutSection {
         gap: 1.5rem;
     }
-    .skillSection, .projectsSection, .educationSection, .educationSection {
+
+    .skillSection,
+    .projectsSection,
+    .educationSection,
+    .educationSection {
         margin-top: 1.5rem;
     }
 }
@@ -604,32 +628,44 @@ textarea::placeholder {
     body {
         padding: 0.5rem;
     }
+
     .heroSection {
         margin: 1rem 0.5rem 1.5rem 0.5rem;
     }
+
     .shortInfo {
         margin: 0 0.5rem 1rem 0.5rem;
         width: 16rem;
     }
+
     .focusArea {
         margin: 0 0.5rem;
         gap: 1rem;
     }
+
     .skillsContainer {
         margin: 0.5rem 0.5rem 0 0.5rem;
     }
+
     .projectsContainer {
         margin: 0.5rem 0.5rem;
     }
+
     .educationContainer {
         margin: 0.5rem 0.5rem;
     }
+
     .contactContainer {
         margin: 0.5rem 0.5rem;
     }
-    .skillSection, .projectsSection, .educationSection, .educationSection {
+
+    .skillSection,
+    .projectsSection,
+    .educationSection,
+    .educationSection {
         margin-top: 1rem;
     }
+
     .focusArea div {
         min-width: 16rem;
     }
