@@ -44,7 +44,7 @@
                 <img class="profileImg">
                 <div class="profileCardDetails">
                     <div class="pcd1">
-                        <p class="pcdp1"></p>
+                        <b class="pcdp1"></b>
                         <p class="pcdp2"></p>
                     </div>
 
@@ -80,7 +80,7 @@
 
         <section id="about" class="aboutSection">
             <h2>About Me</h2>
-            <div>
+            <div class="aboutContainer">
 
                 <p class="shortInfo"></p>
                 <div class="focusArea">
@@ -110,17 +110,15 @@
             <h2>Skills</h2>
             <div class="skillsContainer">
 
-                <div>
+                <div class="skillBox">
                     <h3></h3>
                     <ul></ul>
                 </div>
-                <div class="line"></div>
-                <div>
+                <div class="skillBox">
                     <h3></h3>
                     <ul></ul>
                 </div>
-                <div class="line"></div>
-                <div>
+                <div class="skillBox">
                     <h3></h3>
                     <ul></ul>
                 </div>
@@ -146,7 +144,6 @@
                         <p class="ecip"></p>
                     </div>
                 </div>
-
                 <div class="Card">
                     <img>
                     <div class="cardInfo">
@@ -154,7 +151,6 @@
                         <p class="ecip"></p>
                     </div>
                 </div>
-
                 <div class="Card">
                     <img>
                     <div class="cardInfo">
@@ -162,7 +158,6 @@
                         <p class="ecip"></p>
                     </div>
                 </div>
-
                 <div class="Card">
                     <img>
                     <div class="cardInfo">
@@ -170,7 +165,6 @@
                         <p class="ecip"></p>
                     </div>
                 </div>
-
                 <div class="Card">
                     <img>
                     <div class="cardInfo">
@@ -228,14 +222,16 @@
 
                 <div class="contactForm">
                     <h3>Contact form</h3>
-                    <form method="post">
+                    <form id="messageFrom">
                         <b>Name</b>
-                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="Name" id="name" required autocomplete="off">
                         <b>Email</b>
-                        <input type="email" placeholder="Email" readonly>
+                        <input type="email" placeholder="Email" id="email" required autocomplete="off">
+                        <b>Subject</b>
+                        <input type="text" placeholder="Subject" id="subject" required autocomplete="off">
                         <b>Message</b>
-                        <textarea placeholder="Message" required></textarea>
-                        <button onclick="">Submit</button>
+                        <textarea placeholder="Message" id="message" required autocomplete="off"></textarea>
+                        <button id="sendBtn">Submit</button>
                     </form>
                 </div>
 

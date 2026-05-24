@@ -129,7 +129,7 @@ function homeDataLoader(data) {
     nt2.textContent = data.personalInfo.role;
     myStatus1.textContent = data.currentStatus;
     tagLine.innerHTML = `Hi, I'm Suraj!<br>
-                    ${data.shortTagline}`;
+                    <p>${data.shortTagline}</p>`;
     pcdp1.textContent = data.personalInfo.role;
     pcdp2.textContent = data.personalInfo.experience;
     locsvg.src = data.svgLoc.location;
@@ -149,7 +149,7 @@ async function fetchData() {
     try {
         const response = await fetch('./data.json');
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         homeDataLoader(data);
         aboutDataLoader(data);
         skillsDataLoader(data);
@@ -174,6 +174,28 @@ function mainProgram() {
                 }
             });
         }
+
+        let contactSection = event.target.closest(".contactSection");
+        if (contactSection) {
+            const messageFrom = contactSection.querySelector("#messageFrom");
+            const name = messageFrom.querySelector("#name").value;
+            const email = messageFrom.querySelector("#email").value;
+            const subject = messageFrom.querySelector("#subject").value;
+            const message = messageFrom.querySelector("#message").value;
+            if (name === "" || email === "" || subject === "" || message === "") {
+                return;
+            }
+            let body = "Name: " + name +
+                "\nEmail: " + email +
+                "\nMessage: " + message;
+            let subjectEncoded = encodeURIComponent("subject");
+            let bodyEncoded = encodeURIComponent(body);
+            let mailtoLink = "mailto:surajjain392@gmail.com"
+            + "?subject=" + subjectEncoded +
+            + "&body=" + bodyEncoded;
+            window.location.href = mailtoLink;
+        }
+        
     });
     fetchData();
 }

@@ -11,9 +11,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 2rem;
     overflow-x: hidden;
 }
@@ -43,21 +40,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 2rem;
+    min-height: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 1rem 1rem 0 0;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    box-shadow:
-        inset 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
     padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
 }
 
 .tabs {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 0.5rem 2rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .tabs a {
@@ -79,7 +79,7 @@ body {
 .NameTitle {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    text-align: left;
     gap: 0.3rem;
 }
 
@@ -94,8 +94,8 @@ body {
     background: #216fc9;
     font-size: 1.5rem;
     padding: 0.3rem;
-    width: 2rem;
-    height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,14 +109,15 @@ body {
 .heroSection {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     height: 60%;
+    flex-wrap: wrap;
+    margin: 2rem 4rem;
+    gap: 1rem;
 }
 
 .profileCard {
     position: relative;
     width: 30%;
-    margin: 2rem 4rem;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
     border-radius: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -130,9 +131,9 @@ body {
     position: absolute;
     bottom: 0rem;
     right: 0rem;
-    width: 60%;
-    height: auto;
+    height: 85%;
     border-radius: 0 0 1rem 0;
+    z-index: -1;
 }
 
 .pcd1 {
@@ -141,14 +142,6 @@ body {
     margin-bottom: 1rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     width: max-content;
-}
-
-.pcdp1 {
-    background: linear-gradient(to right, #216fc9, #3221c9);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
 }
 
 .pcdp2 {
@@ -198,8 +191,7 @@ body {
 }
 
 .introText {
-    width: 45%;
-    margin: 2rem 4rem;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -238,7 +230,12 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
 
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .shortInfo {
@@ -249,12 +246,14 @@ body {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
     box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.2);
+    text-align: justify;
 }
 
 .focusArea {
     display: flex;
     margin: 0 4rem;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .focusArea div {
@@ -269,6 +268,8 @@ body {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
     box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.2);
+    min-width: 18rem;
+    flex: 1;
 }
 
 .focusArea div img,
@@ -303,6 +304,7 @@ body {
     margin: 2rem 4rem 0 4rem;
     gap: 4rem;
     height: min-content;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -321,16 +323,12 @@ li {
     padding: 0.3rem 0.5rem;
 }
 
-.skillsContainer div {
+.skillsContainer .skillBox {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 100%;
-}
-
-.skillsContainer .line {
-    width: 0.8rem;
-    background-color: rgba(255, 255, 255, 0.2);
+    min-width: 18rem;
+    flex: 1;
 }
 
 .skillsContainer h3 {
@@ -341,7 +339,7 @@ li {
 
 .projectsContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
     gap: 1rem;
     margin: 2rem 4rem;
 }
@@ -349,6 +347,7 @@ li {
 .projectCard {
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 0.5rem;
@@ -358,11 +357,11 @@ li {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
     box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.2);
     padding: 1rem;
+    height: 30rem;
 }
 
 .pimg {
     width: 100%;
-    height: 40%;
 }
 
 .projectCard p {
@@ -406,7 +405,7 @@ li {
 .educationContainer {
     margin: 2rem 4rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
     gap: 1rem;
 }
 
@@ -442,6 +441,7 @@ li {
     justify-content: space-between;
     gap: 1rem;
     margin: 2rem 4rem;
+    flex-wrap: wrap;
 }
 
 .contactForm {
@@ -449,6 +449,7 @@ li {
     flex-direction: column;
     gap: 1rem;
     width: 50%;
+    flex: 1;
 }
 
 .contactForm form {
@@ -510,4 +511,126 @@ textarea::placeholder {
     flex-direction: column;
     gap: 1rem;
     width: 50%;
+    flex: 1;
+}
+
+@media screen and (max-width: 995px) {
+    .profileCard {
+        width: max-content;
+    }
+
+    .profileImg {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 902px) {
+    .profileCard {
+        width: 20rem;
+    }
+    .profileImg {
+        display: block;
+    }    
+    .heroSection {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heroSection {
+        margin: 2rem 2rem;
+    }
+    .shortInfo {
+        margin: 0 2rem 2rem 2rem;
+    }
+    .focusArea {
+        margin: 0 2rem;
+    }
+    .skillsContainer {
+        margin: 2rem 2rem 0 2rem;
+    }
+    .projectsContainer {
+        margin: 2rem 2rem;
+    }
+    .educationContainer {
+        margin: 2rem 2rem;
+    }
+    .contactContainer {
+        margin: 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profileImg {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        padding: 1rem;
+    }
+    .heroSection {
+        margin: 1rem 1rem 1.5rem 1rem;
+    }
+    .shortInfo {
+        margin: 0 1rem 1rem 1rem;
+    }
+    .focusArea {
+        margin: 0 1rem;
+    }
+    .skillsContainer {
+        margin: 1rem 1rem 0 1rem;
+    }
+    .projectsContainer {
+        margin: 1rem 1rem;
+    }
+    .educationContainer {
+        margin: 1rem 1rem;
+    }
+    .contactContainer {
+        margin: 1rem 1rem;
+    }
+    .aboutSection {
+        gap: 1.5rem;
+    }
+    .skillSection, .projectsSection, .educationSection, .educationSection {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 0.5rem;
+    }
+    .heroSection {
+        margin: 1rem 0.5rem 1.5rem 0.5rem;
+    }
+    .shortInfo {
+        margin: 0 0.5rem 1rem 0.5rem;
+        width: 16rem;
+    }
+    .focusArea {
+        margin: 0 0.5rem;
+        gap: 1rem;
+    }
+    .skillsContainer {
+        margin: 0.5rem 0.5rem 0 0.5rem;
+    }
+    .projectsContainer {
+        margin: 0.5rem 0.5rem;
+    }
+    .educationContainer {
+        margin: 0.5rem 0.5rem;
+    }
+    .contactContainer {
+        margin: 0.5rem 0.5rem;
+    }
+    .skillSection, .projectsSection, .educationSection, .educationSection {
+        margin-top: 1rem;
+    }
+    .focusArea div {
+        min-width: 16rem;
+    }
 }
