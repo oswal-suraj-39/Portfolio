@@ -192,9 +192,9 @@ function mainProgram() {
             let bodyEncoded = encodeURIComponent(body);
             
             let mailtoLink = "mailto:surajjain392@gmail.com"
-            + "?subject=" + subjectEncoded +
-            + "&body=" + bodyEncoded;
-            
+            + "\n?subject=" + subjectEncoded +
+            + "\n&body=" + bodyEncoded;
+
             window.location.href = mailtoLink;
         }
         
