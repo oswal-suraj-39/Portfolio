@@ -7,7 +7,7 @@
         "email": "surajjain392@gmail.com",
         "linkedin": "https://www.linkedin.com/in/suraj-oswal-25b458279/",
         "github": "https://github.com/suraj-oswal-39",
-        "profilePic": "./assets/images/profile.png",
+        "profilePic": "./assets/images/profile.webp",
         "availability": "Open for Work",
         "experience": "Fresher"
     },
@@ -113,7 +113,7 @@
             ],
             "srcCode": "https://github.com/suraj-oswal-39/DBMS_modern_workbench",
             "liveLink": "https://suraj-oswal-39.github.io/DBMS_modern_workbench/images/",
-            "image": "./assets/images/Screenshot1.png"
+            "image": "./assets/images/Screenshot1.webp"
         },
         {
             "name": "Inventory Management System",
@@ -129,7 +129,7 @@
             ],
             "srcCode": "https://github.com/suraj-oswal-39/inventory_system",
             "liveLink": "https://suraj-oswal-39.github.io/inventory_system/html/",
-            "image": "./assets/images/Screenshot2.png"
+            "image": "./assets/images/Screenshot2.webp"
         },
         {
             "name": "Spotify Clone",
@@ -141,7 +141,7 @@
             ],
             "srcCode": "https://github.com/suraj-oswal-39/Spotify-Clone-Project",
             "liveLink": "https://suraj-oswal-39.github.io/Spotify-Clone-Project",
-            "image": "./assets/images/Screenshot3.png"
+            "image": "./assets/images/Screenshot3.webp"
         },
         {
             "name": "Simple Calculator",
@@ -153,7 +153,7 @@
             ],
             "srcCode": "https://github.com/suraj-oswal-39/calculator_project",
             "liveLink": "https://suraj-oswal-39.github.io/calculator_project/",
-            "image": "./assets/images/Screenshot4.png"
+            "image": "./assets/images/Screenshot4.webp"
         }
     ]
 }
