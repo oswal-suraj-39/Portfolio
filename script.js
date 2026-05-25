@@ -189,11 +189,11 @@ function mainProgram() {
                 "\nEmail: " + email +
                 "\nMessage: " + message;
             let subjectEncoded = encodeURIComponent("subject");
-            let bodyEncoded = encodeURIComponent(body);
+            let bodyEncoded = encodeURIComponent("body");
             
             let mailtoLink = "mailto:surajjain392@gmail.com"
-            + "\n?subject=" + subjectEncoded +
-            + "\n&body=" + bodyEncoded;
+            + "?subject=" + subjectEncoded +
+            + "&body=" + bodyEncoded;
 
             window.location.href = mailtoLink;
         }
