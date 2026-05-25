@@ -185,15 +185,16 @@ function mainProgram() {
             if (name === "" || email === "" || subject === "" || message === "") {
                 return;
             }
-            let body = "Name: " + name +
+            let msgbody = "Name: " + name +
                 "\nEmail: " + email +
                 "\nMessage: " + message;
-            let subjectEncoded = encodeURIComponent("subject");
-            let bodyEncoded = encodeURIComponent("body");
+        
+            let subjectEncoded = encodeURIComponent(subject);
+            let bodyEncoded = encodeURIComponent(msgbody);
             
             let mailtoLink = "mailto:surajjain392@gmail.com"
-            + "?subject=" + subjectEncoded +
-            + "&body=" + bodyEncoded;
+                + "?subject=" + subjectEncoded
+                + "&body=" + bodyEncoded;
 
             window.location.href = mailtoLink;
         }
