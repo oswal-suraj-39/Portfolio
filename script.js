@@ -187,7 +187,7 @@ function mainProgram() {
             }
             let msgbody = "Name: " + name +
                 "\nEmail: " + email +
-                "\nMessage: " + message;
+                "\nMessage:\n\n" + message;
         
             let subjectEncoded = encodeURIComponent(subject);
             let bodyEncoded = encodeURIComponent(msgbody);
