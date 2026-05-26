@@ -2,6 +2,7 @@ function contactDataLoader(data) {
     const contactSection = document.querySelector(".contactSection");
     const [cciti1, cciti2, cciti3, cciti4] = contactSection.querySelectorAll(".cciti");
     const [ccip1, ccip2, ccip3, ccip4] = contactSection.querySelectorAll(".ccip");
+    const [aLink1, aLink2] = contactSection.querySelectorAll("a[title]");
     
     cciti1.textContent = "Email";
     cciti2.textContent = "Phone"
@@ -12,6 +13,9 @@ function contactDataLoader(data) {
     ccip2.textContent = data.personalInfo.phone;
     ccip3.textContent = data.personalInfo.linkedin;
     ccip4.textContent = data.personalInfo.github;
+
+    aLink1.href = data.personalInfo.linkedin;
+    aLink2.href = data.personalInfo.github;
 }
 
 function educationDataLoader(data) {
@@ -164,6 +168,7 @@ async function fetchData() {
 function mainProgram() {
     let body = document.querySelector("body");
     body.addEventListener("click", function (event) {
+        
         let link = event.target.closest("a");
         if (link) {
             link.classList.add("tabActive");
@@ -200,6 +205,7 @@ function mainProgram() {
         }
         
     });
+
     fetchData();
 }
 

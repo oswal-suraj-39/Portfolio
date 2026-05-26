@@ -435,6 +435,10 @@ li {
     font-weight: bold;
 }
 
+.ccip {
+    overflow-wrap: anywhere;
+}
+
 .contactContainer {
     display: flex;
     justify-content: space-between;
