@@ -123,7 +123,7 @@ function aboutDataLoader(data) {
 function homeDataLoader(data) {
     const [nameTitle, introText, profileCard] = document.querySelectorAll(".NameTitle, .introText, .profileCard");
     const [nt1, nt2] = nameTitle.querySelectorAll(".nt1, .nt2");
-    const [myStatus1, tagLine] = introText.querySelectorAll(".myStatus1, .tagLine");
+    const [myStatus1, tagLine, downloadResume] = introText.querySelectorAll(".myStatus1, .tagLine, .downloadResume");
     const [pcdp1, pcdp2] = profileCard.querySelectorAll(".pcdp1, .pcdp2");
     const [pcd21, pcd22, pcd23] = profileCard.querySelectorAll(".pcdpa");
     const [profileImg, locsvg, mailsvg, calesvg, linkedinLink, githubLink] = profileCard.querySelectorAll(".profileImg, .locsvg, .mailsvg, .calesvg, .link");
@@ -134,6 +134,7 @@ function homeDataLoader(data) {
     myStatus1.textContent = data.currentStatus;
     tagLine.innerHTML = `Hi, I'm Suraj!<br>
                     <p>${data.shortTagline}</p>`;
+    downloadResume.href = data.personalInfo.resume;
     pcdp1.textContent = data.personalInfo.role;
     pcdp2.textContent = data.personalInfo.experience;
     locsvg.src = data.svgLoc.location;

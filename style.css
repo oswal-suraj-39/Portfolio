@@ -493,7 +493,7 @@ input::-moz-placeholder {
     height: 5.5rem;
 }
 
-.contactContainer form button {
+.contactContainer form button, .introText button {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.5rem;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
@@ -504,6 +504,14 @@ input::-moz-placeholder {
     padding: 0.5rem 0.8rem;
     align-self: flex-end;
     cursor: pointer;
+}
+
+.introText button {
+    align-self: flex-start;
+}
+
+.introText .downloadResume {
+    width: min-content;
 }
 
 textarea::placeholder {
