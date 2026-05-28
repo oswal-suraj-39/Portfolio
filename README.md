@@ -132,17 +132,10 @@ Media queries are used for adaptive layouts and responsiveness.
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to View
 
-1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/your-repository-name.git
-```
-
-2. Open the project folder
-
-3. Run using Live Server or any local server
+Click on this link to View my portfolio:
+https://suraj-jain-39.github.io/Portfolio/
 
 ---
 
