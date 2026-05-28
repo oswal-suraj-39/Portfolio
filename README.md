@@ -1,4 +1,4 @@
-# Glassmorphism Developer Portfolio
+# Glassmorphism-Style Developer Portfolio
 
 A responsive and dynamic personal portfolio website built using **HTML, CSS, and JavaScript** with a modern **Glassmorphism UI** design.
 This portfolio dynamically loads all content from a JSON file, making it scalable and easy to maintain.
