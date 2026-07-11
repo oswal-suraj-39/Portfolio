@@ -1,12 +1,12 @@
 {
     "personalInfo": {
-        "name": "Suraj Uttamchand Jain",
+        "name": "Oswal Suraj",
         "role": "Web Developer",
         "address": "Pune",
         "phone": "+91 9764407469",
-        "email": "surajjain392@gmail.com",
-        "linkedin": "https://www.linkedin.com/in/suraj-jain-25b458279/",
-        "github": "https://github.com/suraj-jain-39",
+        "email": "oswalsuraj449@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/oswal-suraj-25b458279/",
+        "github": "https://github.com/oswal-suraj-39",
         "profilePic": "./assets/images/profile.webp",
         "availability": "Open for Work",
         "experience": "Fresher",
@@ -112,8 +112,8 @@
                 "Express.js",
                 "MySQL"
             ],
-            "srcCode": "https://github.com/suraj-jain-39/DBMS_modern_workbench",
-            "liveLink": "https://suraj-jain-39.github.io/DBMS_modern_workbench/images/",
+            "srcCode": "https://github.com/oswal-suraj-39/DBMS_modern_workbench",
+            "liveLink": "https://oswal-suraj-39.github.io/DBMS_modern_workbench/images/",
             "image": "./assets/images/Screenshot1.webp"
         },
         {
@@ -128,8 +128,8 @@
                 "Express.js",
                 "MySQL"
             ],
-            "srcCode": "https://github.com/suraj-jain-39/inventory_system",
-            "liveLink": "https://suraj-jain-39.github.io/inventory_system/html/",
+            "srcCode": "https://github.com/oswal-suraj-39/inventory_system",
+            "liveLink": "https://oswal-suraj-39.github.io/inventory_system/html/",
             "image": "./assets/images/Screenshot2.webp"
         },
         {
@@ -140,8 +140,8 @@
                 "CSS",
                 "JavaScript"
             ],
-            "srcCode": "https://github.com/suraj-jain-39/Spotify-Clone-Project",
-            "liveLink": "https://suraj-jain-39.github.io/Spotify-Clone-Project",
+            "srcCode": "https://github.com/oswal-suraj-39/Spotify-Clone-Project",
+            "liveLink": "https://oswal-suraj-39.github.io/Spotify-Clone-Project",
             "image": "./assets/images/Screenshot3.webp"
         },
         {
@@ -152,8 +152,8 @@
                 "CSS",
                 "AngularJS"
             ],
-            "srcCode": "https://github.com/suraj-jain-39/calculator_project",
-            "liveLink": "https://suraj-jain-39.github.io/calculator_project/",
+            "srcCode": "https://github.com/oswal-suraj-39/calculator_project",
+            "liveLink": "https://oswal-suraj-39.github.io/calculator_project/",
             "image": "./assets/images/Screenshot4.webp"
         }
     ]
