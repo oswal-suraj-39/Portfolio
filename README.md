@@ -152,7 +152,7 @@ https://oswal-suraj-39.github.io/Portfolio/
 
 ## 👨‍💻 Author
 
-**Suraj Uttamchand Oswal**
+**Oswal Suraj**
 
 * GitHub: https://github.com/oswal-suraj-39
 * LinkedIn: https://www.linkedin.com/in/oswal-suraj-25b458279/
