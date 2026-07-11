@@ -135,7 +135,7 @@ Media queries are used for adaptive layouts and responsiveness.
 ## 🚀 How to View
 
 Click on this link to View my portfolio:
-https://suraj-jain-39.github.io/Portfolio/
+https://oswal-suraj-39.github.io/Portfolio/
 
 ---
 
@@ -154,8 +154,8 @@ https://suraj-jain-39.github.io/Portfolio/
 
 **Suraj Uttamchand Oswal**
 
-* GitHub: https://github.com/suraj-oswal-39
-* LinkedIn: https://www.linkedin.com/in/suraj-oswal-25b458279/
+* GitHub: https://github.com/oswal-suraj-39
+* LinkedIn: https://www.linkedin.com/in/oswal-suraj-25b458279/
 
 ---
 
