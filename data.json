@@ -4,13 +4,13 @@
         "role": "Web Developer",
         "address": "Pune",
         "phone": "+91 9764407469",
-        "email": "oswalsuraj449@gmail.com",
+        "email": "oswalsuraj369@gmail.com",
         "linkedin": "https://www.linkedin.com/in/oswal-suraj-25b458279/",
         "github": "https://github.com/oswal-suraj-39",
         "profilePic": "./assets/images/profile.webp",
         "availability": "Open for Work",
         "experience": "Fresher",
-        "resume": "https://drive.google.com/file/d/1YxT-KoNPH0yOPBTx5P8JY2jT9iQWfTdo/view?usp=drivesdk"
+        "resume": "https://drive.google.com/file/d/1v_k6z_2a0pNHo2U8kw_AMu3NMjuKKO_3/view?usp=drive_link"
     },
     "education": [
         {
@@ -49,6 +49,9 @@
             "skillArr": [
                 "Node.JS",
                 "Java",
+                "Java Servlet",
+                "JSP",
+                "JDBC",
                 "Python",
                 "MySQL",
                 "PostgreSQL"
@@ -57,9 +60,11 @@
         {
             "title": "Tools",
             "skillArr": [
+                "Git",
+                "Github",
                 "VS Code",
                 "Android Studio",
-                "Eclipse IDE",
+                "Eclipse IDE/JEE",
                 "MS Excel",
                 "MS Word",
                 "Draw.io"
@@ -101,6 +106,24 @@
     },
     "projects": [
         {
+            "name": "Employee Management System",
+            "info": "An Employee Management System built using HTML, CSS, JavaScript, Java Servlets, JDBC, and PostgreSQL. This web application helps manage employee records, contact information, department details, and employee-related operations through a user-friendly dashboard.",
+            "techUsed": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Java",
+                "Java Servlets", 
+                "JDBC",
+                "PostgreSQL",
+                "Apache Tomcat", 
+                "Chart.js"
+            ],
+            "srcCode": "https://github.com/oswal-suraj-39/Employee_Management_System",
+            "liveLink": "https://oswal-suraj-39.github.io/Employee_Management_System/src/main/webapp/index.html",
+            "image": "./assets/images/Screenshot5.webp"
+        },
+        {
             "name": "DBMS Modern Workbench",
             "info": "This project is a web-based Database Management System (DBMS) that allows users to create, manage, and interact with databases and tables through a graphical user interface.",
             "techUsed": [
@@ -110,10 +133,11 @@
                 "AngularJS",
                 "Node.js",
                 "Express.js",
-                "MySQL"
+                "MySQL",
+                "PDFKit"
             ],
             "srcCode": "https://github.com/oswal-suraj-39/DBMS_modern_workbench",
-            "liveLink": "https://oswal-suraj-39.github.io/DBMS_modern_workbench/images/",
+            "liveLink": "https://oswal-suraj-39.github.io/DBMS_modern_workbench/Demo/index.html",
             "image": "./assets/images/Screenshot1.webp"
         },
         {
@@ -129,7 +153,7 @@
                 "MySQL"
             ],
             "srcCode": "https://github.com/oswal-suraj-39/inventory_system",
-            "liveLink": "https://oswal-suraj-39.github.io/inventory_system/html/",
+            "liveLink": "https://oswal-suraj-39.github.io/inventory_system/Demo/index.html",
             "image": "./assets/images/Screenshot2.webp"
         },
         {
