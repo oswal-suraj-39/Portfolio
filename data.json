@@ -10,11 +10,7 @@
         "profilePic": "./assets/images/profile.webp",
         "availability": "Open for Work",
         "experience": "Fresher",
-<<<<<<< HEAD
         "resume": "https://drive.google.com/file/d/1v_k6z_2a0pNHo2U8kw_AMu3NMjuKKO_3/view?usp=drive_link"
-=======
-        "resume": "https://drive.google.com/file/d/1BX0kYi2roGrzIRZ7Jd7fuUcjYdTmo3Ra/view?usp=drivesdk"
->>>>>>> e42f510904773e081a433fa6fb4aa7a7d10920be
     },
     "education": [
         {
